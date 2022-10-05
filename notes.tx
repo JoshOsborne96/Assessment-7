@@ -1,0 +1,27 @@
+Runtime of append vs insert
+
+Results for the extraLargeArray:
+insert 886.0064 ms
+append 3.0278 ms
+
+Results for the largeArray
+insert 9.2128 ms
+append 639.8 μs
+
+Results for the mediumArray
+insert 196.2 μs
+append 177.6 μs
+
+Results for the smallArray
+insert 46.2 μs
+append 129.1 μs
+
+Results for the tinyArray
+insert 33.9 μs
+append 121.4 μs
+
+Comparision: 
+
+    The main pattern we see is as the array size goes up, so does the runtime but not in the same way for both methods. As evident by the runtimes above, we can see 
+that the append method scales better in that it's runtime doesn't significantly increase as we increase our array size. however, we see that the insert method does not 
+quite scale so well as its runtime moves from micro seconds into almost a full second to run the function as our array size increases.
